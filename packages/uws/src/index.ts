@@ -4,7 +4,6 @@ import uWS from 'uWebSockets.js';
 export interface ServeOptions {
 	port: number;
 	host: string;
-	// static?: Record<`/${string}`, Response>;
 	fetch: (request: Request) => Promise<Response>;
 }
 
